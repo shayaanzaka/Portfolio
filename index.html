@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayaan Zaka</title>
+    <link rel="icon" href="C:\Users\shaya\OneDrive\Desktop\Portfolio\robo.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Font family to mimic Apple's design */
+        body, h1, h2, h3, h4, h5, h6, p, a, span {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Navbar shadow */
+            padding: 10px 10px;
+        }
+        .navbar-brand {
+            font-weight: 600;
+            margin-right: 30px;
+        }
+        .navbar-nav {
+            margin-left: 10px; /* Adjust margin to keep links close to the brand */
+        }
+        .intro-section {
+            margin-top: 50px;
+        }
+        .intro-text h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        .intro-text p {
+            color: #666;
+        }
+        .social-icons {
+            margin-top: 15px;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            margin-right: 20px;
+            color: #57068c;
+        }
+        .social-icons a:hover {
+            color: #452f77;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .logo {
+            width: 100px;
+            height: 50px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .experience-education {
+            margin-top: 60px;
+            background-color: #eee6fe;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .experience-item,
+        .education-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .experience-item i,
+        .education-item i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #57068c;
+        }
+        .btn-custom {
+            background-color: #57068c;
+            color: white;
+            border-radius: 5px;
+        }
+        .btn-custom:hover {
+            background-color: #452f77;
+        }
+
+        .footer {
+            margin-top: 60px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            border-top: 1px solid #ddd;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            color: #57068c !important; /* Highlight color */
+            border-bottom: 2px solid #57068c; /* Bottom border for active state */
+            margin-right: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="C:\Users\shaya\OneDrive\Desktop\Portfolio\homelogo.png" class="logo" alt="Website Logo"> <!-- Placeholder logo -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a> <!-- Marked active -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a> <!-- Marked active -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="container intro-section">
+        <div class="row">
+            <!-- Left Column: Profile Picture and Introduction -->
+            <div class="col-md-6 d-flex align-items-start">
+                <img src="C:\Users\shaya\OneDrive\Desktop\Portfolio\1685520308839.jpeg" class="profile-pic mr-3" alt="Profile Image">
+                <div class="intro-text">
+                    <h1>Hello! I’m Shayaan</h1>
+                    <p>A Website and Product designer based in New York, USA.<br> Passionate about creating great experiences for digital products.</p>
+                    <!-- Social Icons Section -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shayaanzaka/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/shayaanzaka" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/shayaanzaka/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column: Description and Call to Action Buttons -->
+            <div class="col-md-6 text-right">
+                <h3>A passionate tech enthusiast.</h3>
+                <p>Skilled in Machine Learning, Big Data, and Information Visualization.<br> Experienced in Angular and NodeJS development.</p>
+                <!-- Action Buttons -->
+                <!-- Action Buttons with Shadow Effect -->
+                <a href="resume.pdf" class="btn btn-custom btn-sm mr-2" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" download>Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience and Education Section -->
+    <div class="container experience-education mt-5">
+        <div class="row">
+            <!-- Working Experience Column -->
+            <div class="col-md-6">
+                <h4>Working Experience</h4>
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <strong>Operations Analyst at EY</strong><br>
+                        <span>March 2023 - August 2024</span>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <strong>Analyst at Merkle</strong><br>
+                        <span>July 2022 - February 2023</span>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <strong>Programmer Analyst at Cognizant</strong><br>
+                        <span>December 2021 - May 2022</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Education Column -->
+            <div class="col-md-6">
+                <h4>Education</h4>
+                <div class="education-item">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <strong>Master of Science in Management of Technology</strong><br>
+                        <span>New York University, USA (2024 - Present)</span>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <strong>Bachelor of Technology in Computer Science</strong><br>
+                        <span>Birla Institute of Technology, Mesra, India (2018 - 2022)</span>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-school"></i>
+                    <div>
+                        <strong>High School & Secondary Education</strong><br>
+                        <span>St. Michael's High School, Patna (2005 - 2017)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>© 2024 Shayaan Zaka. All rights reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

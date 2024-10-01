@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" href="C:\Users\shaya\OneDrive\Desktop\Portfolio\robo.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p, a, span {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Navbar shadow */
+            padding: 10px 10px;
+        }
+        .navbar-brand {
+            font-weight: 600;
+            margin-right: 30px;
+        }
+        .navbar-nav {
+            margin-left: 10px; /* Adjust margin to keep links close to the brand */
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            color: #57068c !important; /* Highlight color */
+            border-bottom: 2px solid #57068c; /* Bottom border for active state */
+            margin-left: 25px;
+        }
+
+        .projects-section {
+            margin-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .project-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            background: white;
+        }
+
+        .project-card h5 {
+            display: flex;
+            align-items: center;
+        }
+
+        .badge-custom {
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            border-radius: 15px;
+            color: #fff;
+        }
+
+        .frameworks-used span {
+            background-color: #eee;
+            color: #333;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-right: 5px;
+            font-size: 0.85rem;
+        }
+
+        .btn-custom {
+            background-color: #57068c;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: #452f77;
+        }
+
+        .divider {
+            border-top: 1px solid #ddd;
+            margin: 15px 0;
+        }
+
+        .footer {
+            margin-top: 60px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            border-top: 1px solid #ddd;
+        }
+
+        .logo {
+            width: 100px;
+            height: 50px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="C:\Users\shaya\OneDrive\Desktop\Portfolio\homelogo.png" class="logo" alt="Website Logo"> <!-- Placeholder logo -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a> <!-- Remove 'active' from this link -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="projects.html">Projects</a> <!-- Set this as active -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <div class="container projects-section">
+        <div class="project-card">
+            <h5>Initial Sample Verification #PROJECT123 <span class="badge badge-success badge-custom ml-2">Completed</span></h5>
+            <div class="frameworks-used mt-3">
+                <span>React</span><span>NodeJS</span><span>MongoDB</span><span>Bootstrap</span>
+            </div>
+            <hr class="divider"> <!-- Divider line added here -->
+            <div class="d-flex mt-3">
+                <a href="https://github.com/yourprofile/project123" class="btn btn-outline-secondary btn-sm mr-2"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fas fa-file-alt"></i> Download Report</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h5>Initial Sample Verification #PROJECT456 <span class="badge badge-warning badge-custom ml-2">In Progress</span></h5>
+            <div class="frameworks-used mt-3">
+                <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span>
+            </div>
+            <hr class="divider"> <!-- Divider line added here -->
+            <div class="d-flex mt-3">
+                <a href="https://github.com/yourprofile/project456" class="btn btn-outline-secondary btn-sm mr-2"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fas fa-file-alt"></i> Download Report</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h5>Initial Sample Verification #PROJECT789 <span class="badge badge-primary badge-custom ml-2">Pending</span></h5>
+            <div class="frameworks-used mt-3">
+                <span>Django</span><span>PostgreSQL</span><span>JavaScript</span>
+            </div>
+            <hr class="divider"> <!-- Divider line added here -->
+            <div class="d-flex mt-3">
+                <a href="https://github.com/yourprofile/project789" class="btn btn-outline-secondary btn-sm mr-2"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fas fa-file-alt"></i> Download Report</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Shayaan Zaka. All rights reserved.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
