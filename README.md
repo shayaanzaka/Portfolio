@@ -7,7 +7,7 @@ A modern, high-performance personal portfolio built with Next.js and React.
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
-> **[Live Demo](#)** *(Placeholder for deployment URL)*
+> **[Live Demo](https://portfolio-mu-navy-9tpvsei4pj.vercel.app/)**
 
 ![Portfolio Preview](#) *(Placeholder for screenshot)*
 
