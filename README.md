@@ -9,7 +9,7 @@ A modern, high-performance personal portfolio built with Next.js and React.
 
 > **[Live Demo](https://portfolio-mu-navy-9tpvsei4pj.vercel.app/)**
 
-![Portfolio Preview](#) *(Placeholder for screenshot)*
+![Portfolio Preview](./public/preview.png)
 
 ---
 
