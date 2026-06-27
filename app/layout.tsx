@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Mono, Lora } from "next/font/google";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react";
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-display",
@@ -35,6 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfair.variable} ${dmMono.variable} ${lora.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
