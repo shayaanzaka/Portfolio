@@ -1,0 +1,113 @@
+.section {
+  padding: var(--section-gap) 0;
+  border-top: 1px solid var(--border);
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.heading {
+  margin-top: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 40px 36px;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.card:hover {
+  transform: scale(1.03) translateY(-4px);
+  background: rgba(255, 255, 255, 0.025);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(255, 255, 255, 0.01);
+}
+
+.category {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 28px;
+}
+
+.skillsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillsGroup.other {
+  margin-top: 14px;
+  gap: 8px;
+}
+
+/* Main skills - slightly larger, brighter */
+.tagMain {
+  font-family: var(--font-body), sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 16px;
+  border-radius: 24px;
+  transition: background 0.4s ease, border-color 0.4s ease, color 0.4s ease;
+}
+
+.card:hover .tagMain {
+  background: var(--accent-gold-dim);
+  border-color: var(--accent-gold-border);
+  color: var(--accent-gold);
+}
+
+/* Other skills - smaller, lighter */
+.tagOther {
+  font-family: var(--font-body), sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 6px 14px;
+  border-radius: 24px;
+  transition: color 0.4s ease, border-color 0.4s ease, background 0.4s ease;
+}
+
+.card:hover .tagOther {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 28px 24px;
+  }
+}
